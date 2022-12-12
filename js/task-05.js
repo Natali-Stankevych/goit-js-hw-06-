@@ -5,9 +5,9 @@ console.log(output);
 
 input.oninput = function (){
     if (input.value === ' ') {
-        output.innerHTML = "Anonymous";
+        output.textContent = "Anonymous";
     } else {
-        output.innerHTML = input.value;
+        output.textContent = input.value;
     }
 }
 

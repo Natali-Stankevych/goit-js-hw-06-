@@ -6,11 +6,14 @@ const ingredients = [
   "Herbs",
   "Condiments",
 ];
+const list = document.getElementById("#ingredients");
+const liArray = [];
 
-const list = document.getElementById("ingredients");
+
 const markup = ingredients.forEach(ingredient => {
-    let items = document.createElement("li");
-    items.innerHTML = ingredient;
-    list.appendChild(items);
+    let item= document.createElement("li");
+  item.classList = 'item';
+  item.textContent = ingredients;
+  liArray.push(item)
 });
-console.log(markup);
+console.log(...liArray);

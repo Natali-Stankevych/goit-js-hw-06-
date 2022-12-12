@@ -9,7 +9,10 @@ function handSabmat(evt) {
     if (!email.value || !password.value) {
         return alert('всі поля повинні бути заповнені');
     }
-
-console.log(`Email:${email.value}, Password: ${password.value}`);
+     
+    const userDetails = { email: email.value, password : password.value}
+    console.log(userDetails)
+    
+    
 evt.currentTarget.reset();
 };

@@ -15,7 +15,7 @@ function createBoxes(amount) {
   let basicSize = 30;
   let fragment = document.createDocumentFragment();
   for (let i = 0; i < amount; i++) {
-    let size = basicSize + i * 10;
+    let size = basicSize + 10 * i;
     let div = document.createElement("div");
     div.style.cssText = `width: ${size}px; height: ${size}px; background-color: ${getRandomHexColor()}`;
     fragment.appendChild(div);
@@ -27,6 +27,7 @@ destroy.addEventListener("click", destroyBoxes);
 function destroyBoxes() {
   box.innerHTML = "";
 }
+
 
 
 function getRandomHexColor() {
