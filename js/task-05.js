@@ -4,7 +4,7 @@ console.log(input);
 console.log(output);
 
 input.oninput = function (){
-    if (input.value === ' ') {
+    if (input.value === '') {
         output.textContent = "Anonymous";
     } else {
         output.textContent = input.value;
